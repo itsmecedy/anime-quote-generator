@@ -1,0 +1,45 @@
+* {
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 100vh;
+  margin-top: 20%;
+  border: 3px solid green;
+  /* width: 400px; for desktop*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.wrapper h1 {
+}
+.wrapper #quote {
+  margin: 1rem 7rem;
+  color: red;
+}
+
+#quote {
+  quotes: '"' '"' "'" "'";
+}
+#quote::before {
+  content: open-quote;
+}
+#quote::after {
+  content: close-quote;
+}
+
+.wrapper button {
+  padding: 10px;
+  width: 20rem;
+  border-radius: 5px;
+}
